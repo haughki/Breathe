@@ -119,6 +119,7 @@ def check_for_manuals(context, command_dictlist):
 
 def load_or_reload(module_name):
     try:
+        print("Loading module %s" % module_name)
         if module_name not in sys.modules:
             importlib.import_module(module_name)
         else:

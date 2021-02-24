@@ -198,7 +198,7 @@ class Master(Grammar):
         elif isinstance(modules, string_types):
             module_name = "%s.%s" % (namespace, modules) if namespace else modules
             self.modules.append(module_name)
-            print("Loading module %s" % module_name)
+            # print("Loading module %s" % module_name)
             load_or_reload(module_name)
 
     # ------------------------------------------------
